@@ -1,0 +1,21 @@
+[
+    {
+      "title": "Tech Enthusiast's Paradise",
+      "description": "Discover the latest gadgets and tech accessories delivered monthly",
+      "image": "https://i.postimg.cc/vZzCyMKM/photo-1542751371-adc38448a05e.jpg",
+      "link": "/services"
+    },
+    {
+      "title": "Developer's Dream Box",
+      "description": "Essential tools and resources for modern developers",
+      "image": "https://i.postimg.cc/NM16hGNk/photo-1550745165-9bc0b252726f.jpg",
+      "link": "/services"
+    },
+    {
+      "title": "Gaming Gear Galore",
+      "description": "Level up your gaming experience with exclusive merchandise",
+      "image": "https://i.postimg.cc/W1CghqC7/photo-1555099962-4199c345e5dd.jpg",
+      "link": "/services"
+    }
+  ]
+  

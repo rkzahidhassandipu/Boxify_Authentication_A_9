@@ -1,0 +1,135 @@
+[
+    {
+      "id": "31937384001435644618",
+      "name": "Smart Home Box",
+      "thumbnail": "https://i.postimg.cc/8z7v2FSM/a.jpg",
+      "banner": "https://example.com/images/smart-home-box-banner.jpg",
+      "frequency": "Yearly",
+      "price": 199.99,
+      "description": "Transform your home into a smart home with curated smart devices, home automation products, and IoT gadgets.",
+      "tech_category": "Smart Home",
+      "features": [
+        "Smart Home Devices",
+        "Home Automation Tools",
+        "Cutting-edge IoT Gadgets"
+      ],
+      "subscription_benefits": [
+        "Discount on Future Smart Home Purchases",
+        "Exclusive Smart Home Tutorials",
+        "Early Access to Product Releases"
+      ],
+      "ratings": 4.8,
+      "number_of_reviews": 315
+    },
+    {
+      "id": "49707986278296168864",
+      "name": "Gamer Essentials Box",
+      "thumbnail": "https://i.postimg.cc/1XRnJXBg/b.jpg",
+      "banner": "https://example.com/images/gamer-essentials-banner.jpg",
+      "frequency": "Monthly",
+      "price": 39.99,
+      "description": "Get exclusive gaming gear, accessories, and collectibles delivered to your door.",
+      "tech_category": "Gaming",
+      "features": [
+        "Gaming Accessories",
+        "Limited Edition Collectibles",
+        "Game Codes & Discounts"
+      ],
+      "subscription_benefits": [
+        "Early Beta Access to New Games",
+        "Exclusive Gamer Merchandise",
+        "Monthly Gaming Challenges"
+      ],
+      "ratings": 4.7,
+      "number_of_reviews": 210
+    },
+    {
+      "id": "10845827110310123793",
+      "name": "Tech Tinker Box",
+      "thumbnail": "https://i.postimg.cc/ZRSyvVyx/c.jpg",
+      "banner": "https://example.com/images/tech-tinker-banner.jpg",
+      "frequency": "Quarterly",
+      "price": 89.99,
+      "description": "Perfect for DIY enthusiasts and makers—get electronic kits and tools for building fun projects.",
+      "tech_category": "DIY & Maker",
+      "features": [
+        "Electronic Components",
+        "Arduino/Raspberry Pi Projects",
+        "Toolkits for DIY Builds"
+      ],
+      "subscription_benefits": [
+        "Step-by-Step Build Guides",
+        "Community Forum Access",
+        "Exclusive Webinars with Makers"
+      ],
+      "ratings": 4.6,
+      "number_of_reviews": 180
+    },
+    {
+      "id": "53983091523996651552",
+      "name": "Green Tech Box",
+      "thumbnail": "https://i.postimg.cc/fLfScmcn/d.jpg",
+      "banner": "https://example.com/images/green-tech-banner.jpg",
+      "frequency": "Monthly",
+      "price": 29.99,
+      "description": "Eco-friendly technology and sustainable gadgets for the environmentally conscious.",
+      "tech_category": "Green Tech",
+      "features": [
+        "Solar Chargers",
+        "Biodegradable Tech Products",
+        "Sustainable Accessories"
+      ],
+      "subscription_benefits": [
+        "Carbon Offset Credits",
+        "Eco Tech Tips",
+        "Green Product Reviews"
+      ],
+      "ratings": 4.5,
+      "number_of_reviews": 150
+    },
+    {
+      "id": "17659676781815137296",
+      "name": "Wearable Tech Box",
+      "thumbnail": "https://i.postimg.cc/rshdbTZf/e.jpg",
+      "banner": "https://example.com/images/wearable-tech-banner.jpg",
+      "frequency": "Bi-Monthly",
+      "price": 74.99,
+      "description": "Discover the latest in wearable technology including smartwatches, fitness trackers, and more.",
+      "tech_category": "Wearable Tech",
+      "features": [
+        "Fitness Trackers",
+        "Smart Glasses",
+        "Health Monitoring Devices"
+      ],
+      "subscription_benefits": [
+        "Fitness App Premium Trials",
+        "Wearable Tech Comparisons",
+        "Member-Only Discounts"
+      ],
+      "ratings": 4.9,
+      "number_of_reviews": 278
+    },
+    {
+      "id": "35779168735140368877",
+      "name": "Coding Learners Box",
+      "thumbnail": "https://i.postimg.cc/FFGJ1bF0/f.jpg",
+      "banner": "https://example.com/images/coding-learners-banner.jpg",
+      "frequency": "Monthly",
+      "price": 49.99,
+      "description": "Learn to code with monthly project kits, coding challenges, and access to online lessons.",
+      "tech_category": "Education",
+      "features": [
+        "Project-Based Learning Kits",
+        "Access to Online Courses",
+        "Coding Challenges"
+      ],
+      "subscription_benefits": [
+        "Certificates of Completion",
+        "Mentor Q&A Sessions",
+        "Career Path Guidance"
+      ],
+      "ratings": 4.8,
+      "number_of_reviews": 340
+    }
+  ]
+  
