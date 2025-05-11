@@ -71,11 +71,7 @@ Boxify is a modern and responsive subscription box service platform built with R
 - **React Helmet**
 - **Swiper**
 
----
 
-## 📂 Folder Structure
-
----
 
 ## 📣 Author
 
