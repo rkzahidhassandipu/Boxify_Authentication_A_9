@@ -35,10 +35,6 @@ const router = createBrowserRouter([
         element: <Register />
       },
       {
-        path: "*",
-        element: <NotFoundPage />
-      },
-      {
         path: "Profile",
         element: <PrivateRoute><Profile /></PrivateRoute>
       },
@@ -51,7 +47,11 @@ const router = createBrowserRouter([
         element: <ForgetPassword />
       },
     ]
-  }
+  },
+      {
+        path: "*",
+        element: <NotFoundPage />
+      },
 ]);
 
 export default router;

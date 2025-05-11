@@ -22,6 +22,7 @@ const Login = () => {
         navigate(from, { replace: true });
       })
       .catch((error) => {
+        toast.error("Login failed. Please try again.");
         console.log(error.code);
       });
   };
@@ -33,6 +34,7 @@ const Login = () => {
         navigate(from, { replace: true });
       })
       .catch((error) => {
+        toast.error("Google login failed. Please try again.");
         console.log(error);
       });
   };

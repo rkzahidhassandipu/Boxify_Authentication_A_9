@@ -9,14 +9,20 @@ import 'react-toastify/dist/ReactToastify.css';
 function App() {
 
   return (
-    <>
-
-      <Navbar />
+    <div className="flex flex-col min-h-screen">
       <ToastContainer />
-      <Outlet />
+      {/* Navbar will be visible on all pages */}
+      <Navbar />
+
+      {/* Main content area where the child routes are rendered */}
+      <main className="flex-grow">
+        <Outlet />
+      </main>
+
+      {/* Footer will be visible on all pages */}
       <Footer />
-    </>
-  )
+    </div>
+  );
 }
 
 export default App

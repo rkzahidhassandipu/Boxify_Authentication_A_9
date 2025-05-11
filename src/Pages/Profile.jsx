@@ -3,6 +3,7 @@ import { AuthContext } from '../context/AuthProvider';
 import { useNavigate } from 'react-router';
 import PageTitle from '../Components/PageTitle';
 import Loading from "../Components/Loading"
+import { toast } from 'react-toastify';
 
 
 const Profile = () => {
@@ -17,6 +18,7 @@ const Profile = () => {
       updateUserInfo({displayName: name, photoURL})
       setUser({...user, displayName: name, photoURL})
       .then(() => {
+        toast.success("Your profile is Updated")
         setIsEditing(false);
       }).catch((error) => {
           console.log('Error updating profile:', error);
