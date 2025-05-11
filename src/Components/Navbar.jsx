@@ -21,7 +21,8 @@ const Navbar = () => {
     <div className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Website Name */}
-        <Link to="/" className="text-2xl font-bold text-indigo-600">
+        <Link to="/" className="text-2xl font-bold text-indigo-600 flex items-center">
+          <img className="w-10 mr-2" src="https://i.postimg.cc/W4jFqrct/logo.png" alt="" />
           Boxify
         </Link>
 
