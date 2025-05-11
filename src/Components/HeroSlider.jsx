@@ -8,6 +8,7 @@ import { FaArrowRight } from 'react-icons/fa';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import PageTitle from './PageTitle';
 
 const HeroSlider = () => {
   const [slides, setSlides] = useState([]);

@@ -1,22 +1,20 @@
 import { NavLink, Link } from "react-router";
-import { useState } from "react";
+import { use, useState } from "react";
 import { toast } from "react-toastify";
+import { AuthContext } from "../context/AuthProvider";
 
 const Navbar = () => {
-  // Mock user state (replace with actual authentication state management)
-  const [user, setUser] = useState({
-    displayName: "John Doe",  // Example user
-    photoURL: "https://randomuser.me/api/portraits/men/45.jpg" // Example avatar
-  });
+  const { user, signOutUser } = use(AuthContext);
 
   // Mock logout function (replace with actual logout logic)
-  const handleLogout = async () => {
-    try {
-      setUser(null);  // Clear the user state (log out)
-      toast.success("Logged out successfully!");
-    } catch (error) {
-      toast.error("Logout failed!", error);
-    }
+  const handleSignout = async () => {
+    signOutUser()
+      .then(() => {
+        toast.error("You are Logged out!");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   return (
@@ -32,8 +30,11 @@ const Navbar = () => {
           <NavLink to="/" className="nav-link">
             Home
           </NavLink>
-          <NavLink to="/my-profile" className="nav-link">
+          <NavLink to="/profile" className="nav-link">
             My Profile
+          </NavLink>
+          <NavLink to="/contactUs" className="nav-link">
+            Contact Us
           </NavLink>
         </nav>
 
@@ -42,21 +43,23 @@ const Navbar = () => {
           {user ? (
             <>
               <div className="relative group">
-                <img
-                  src={user.photoURL || "/default-avatar.png"}
-                  alt="User Avatar"
-                  className="w-10 h-10 rounded-full border cursor-pointer"
-                />
+                  <img
+                    src={user.photoURL || "/default-avatar.png"}
+                    alt="User Avatar"
+                    className="w-10 h-10 rounded-full border cursor-pointer"
+                  />
                 <span className="absolute -bottom-7 left-1/2 -translate-x-1/2 text-sm bg-gray-800 text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity z-50">
                   {user.displayName}
                 </span>
               </div>
-              <button
-                onClick={handleLogout}
+              <Link to={"/login"}>
+                <button
+                onClick={handleSignout}
                 className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600"
               >
                 Logout
               </button>
+              </Link>
             </>
           ) : (
             <NavLink

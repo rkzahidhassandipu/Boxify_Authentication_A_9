@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "title": "Zuora: 2024 Gartner® Leader",
+    "description": "Zuora named a Leader in the 2024 Gartner® Magic Quadrant™ for Recurring Billing",
+    "icon": "G",
+    "iconColor": "bg-gray-800",
+    "textColor": "text-white"
+  },
+  {
+    "id": 2,
+    "title": "Zuora #1 in ISG Guide",
+    "description": "Zuora is ranked #1 in the ISG Research into the Subscription Management Buyers Guides",
+    "icon": "ISG",
+    "iconColor": "border border-purple-500 text-purple-500",
+    "textColor": "text-purple-500"
+  },
+  {
+    "id": 3,
+    "title": "Zuora Revenue #1 in Automation",
+    "description": "Zuora is ranked #1 in the ISG Research into the Subscription Management Buyers Guides",
+    "icon": "https://i.postimg.cc/NMT6LKpj/close-head-shot-portrait-preppy-600nw-1433809418.webp",
+    "iconColor": "rounded-full",
+    "textColor": "text-gray-600",
+    "isImage": true
+  },
+  {
+    "id": 4,
+    "title": "Zuora Revenue #1 in Strategy",
+    "description": "Zuora Revenue ranks #1 in automated published revenue management.",
+    "icon": "https://i.postimg.cc/D0TqG7Md/istockphoto-1437816897-612x612.jpg",
+    "iconColor": "rounded-full",
+    "textColor": "text-gray-600",
+    "isImage": true
+  }
+]

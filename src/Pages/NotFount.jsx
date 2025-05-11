@@ -1,8 +1,10 @@
 import { Link } from "react-router";
+import PageTitle from "../Components/PageTitle"
 
 const NotFoundPage = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen text-center px-4 bg-gray-50">
+      <PageTitle title={"Page Not Found"} />
       <h1 className="text-6xl md:text-7xl font-bold text-indigo-600 mb-4">404</h1>
       <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-2">
         Page Not Found

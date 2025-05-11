@@ -1,114 +1,108 @@
-import React from 'react'
+import React, { use } from "react";
+const sectionData = fetch("/sectionData.json").then((res) => res.json());
+import "../Style/Animation.css";
 
 const OurService = () => {
+  const data = use(sectionData);
+
   return (
-    // Our Services Section
-    <div className="bg-white max-w-6xl mx-auto mt-20 p-6 rounded-2xl shadow-md">
-      <div className="text-center mb-10">
-        <h2 className="text-2xl font-bold text-indigo-600">Our Services</h2>
-        <p className="text-gray-600 mt-2">We provide 100% original service for your business</p>
+    <section className="relative overflow-hidden py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      {/* Title */}
+      <div className="text-center mb-12">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold">
+          A Trusted <span className="text-gray-400">Leader</span>{" "}
+          <br className="hidden md:block" />
+          In <span className="text-gray-900">Monetization</span>
+          <span className="inline-block ml-2">
+            <span className="inline-flex items-center justify-center w-8 h-8 bg-orange-400 text-white rounded-full text-sm">
+              ⚡
+            </span>
+            <span className="inline-flex items-center justify-center w-8 h-8 bg-purple-500 text-white rounded-full text-sm ml-1">
+              ⭐
+            </span>
+          </span>
+        </h2>
+        <p className="mt-4 max-w-xl mx-auto text-gray-600">
+          Zuora is a trusted leader in monetization, delivering innovative
+          solutions that drive growth and streamline revenue operations
+        </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {/* Service 1 */}
-        <div className="p-6 rounded-lg shadow border bg-indigo-100">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="w-10 h-10 bg-indigo-600 text-white rounded-full flex items-center justify-center">
-              <span className="text-xl">💼</span>
-            </div>
-            <h3 className="font-semibold text-lg text-gray-800">Business Solutions</h3>
+      {/* Grid */}
+      <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-8 lg:gap-8">
+        {/* Center Z Icon */}
+        <div className="absolute inset-0 hidden lg:flex items-center justify-center pointer-events-none z-0">
+          <div className="icon-container">
+            <div className="icon">Z</div>
           </div>
-          <p className="text-sm text-gray-600 mb-4">
-            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those.
-          </p>
-          <a href="#" className="text-indigo-600 font-semibold hover:underline">
-            Learn More
-          </a>
         </div>
 
-        {/* Service 2 */}
-        <div className="p-6 rounded-lg shadow border bg-white">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="w-10 h-10 bg-indigo-600 text-white rounded-full flex items-center justify-center">
-              <span className="text-xl">🎨</span>
+        {/* Left Cards */}
+        <div className="flex flex-col gap-8 sm:gap-12 md:gap-8 lg:gap-24 w-full md:w-[360px] lg:w-[400px] mx-auto md:mx-0 md:self-start">
+          {data.slice(0, 2).map((card) => (
+            <div
+              key={card.id}
+              className="relative z-10 bg-white shadow-lg rounded-xl p-6 space-y-4"
+            >
+              <div className="flex items-center gap-2">
+                {card.isImage ? (
+                  <img
+                    src={card.icon}
+                    alt={card.title}
+                    className={`${card.iconColor} w-8 h-8 min-w-[32px] min-h-[32px]`}
+                  />
+                ) : (
+                  <div
+                    className={`${card.iconColor} text-white w-8 h-8 flex items-center justify-center rounded-full font-bold`}
+                  >
+                    {card.icon}
+                  </div>
+                )}
+                <h3 className="font-semibold text-lg sm:text-xl">
+                  {card.title}
+                </h3>
+              </div>
+              <p className="text-sm sm:text-base text-gray-600">
+                {card.description}
+              </p>
             </div>
-            <h3 className="font-semibold text-lg text-gray-800">Design Solutions</h3>
-          </div>
-          <p className="text-sm text-gray-600 mb-4">
-            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those.
-          </p>
-          <a href="#" className="text-indigo-600 font-semibold hover:underline">
-            Learn More
-          </a>
+          ))}
         </div>
 
-        {/* Service 3 */}
-        <div className="p-6 rounded-lg shadow border bg-indigo-100">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="w-10 h-10 bg-indigo-600 text-white rounded-full flex items-center justify-center">
-              <span className="text-xl">📈</span>
+        {/* Right Cards */}
+        <div className="flex flex-col gap-8 sm:gap-12 md:gap-8 lg:gap-24 w-full md:w-[360px] lg:w-[400px] mx-auto md:mx-0 md:self-start justify-self-end">
+          {data.slice(2, 4).map((card) => (
+            <div
+              key={card.id}
+              className="relative z-10 bg-white shadow-lg rounded-xl p-6 space-y-4"
+            >
+              <div className="flex items-center gap-2">
+                {card.isImage ? (
+                  <img
+                    src={card.icon}
+                    alt={card.title}
+                    className={`${card.iconColor} w-8 h-8 min-w-[32px] min-h-[32px]`}
+                  />
+                ) : (
+                  <div
+                    className={`${card.iconColor} text-white w-8 h-8 flex items-center justify-center rounded-full font-bold`}
+                  >
+                    {card.icon}
+                  </div>
+                )}
+                <h3 className="font-semibold text-lg sm:text-xl">
+                  {card.title}
+                </h3>
+              </div>
+              <p className="text-sm sm:text-base text-gray-600">
+                {card.description}
+              </p>
             </div>
-            <h3 className="font-semibold text-lg text-gray-800">Marketing Solutions</h3>
-          </div>
-          <p className="text-sm text-gray-600 mb-4">
-            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those.
-          </p>
-          <a href="#" className="text-indigo-600 font-semibold hover:underline">
-            Learn More
-          </a>
+          ))}
         </div>
-
-        {/* Service 4 */}
-        <div className="p-6 rounded-lg shadow border bg-white">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="w-10 h-10 bg-indigo-600 text-white rounded-full flex items-center justify-center">
-              <span className="text-xl">🖥️</span>
-            </div>
-            <h3 className="font-semibold text-lg text-gray-800">IT Solutions</h3>
-          </div>
-          <p className="text-sm text-gray-600 mb-4">
-            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those.
-          </p>
-          <a href="#" className="text-indigo-600 font-semibold hover:underline">
-            Learn More
-          </a>
-        </div>
-
-        {/* Service 5 */}
-        <div className="p-6 rounded-lg shadow border bg-indigo-100">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="w-10 h-10 bg-indigo-600 text-white rounded-full flex items-center justify-center">
-              <span className="text-xl">🔒</span>
-            </div>
-            <h3 className="font-semibold text-lg text-gray-800">Security Solutions</h3>
-          </div>
-          <p className="text-sm text-gray-600 mb-4">
-            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those.
-          </p>
-          <a href="#" className="text-indigo-600 font-semibold hover:underline">
-            Learn More
-          </a>
-        </div>
-
-        {/* Service 6 */}
-        <div className="p-6 rounded-lg shadow border bg-white">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="w-10 h-10 bg-indigo-600 text-white rounded-full flex items-center justify-center">
-              <span className="text-xl">💻</span>
-            </div>
-            <h3 className="font-semibold text-lg text-gray-800">Web Development</h3>
-          </div>
-          <p className="text-sm text-gray-600 mb-4">
-            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those.
-          </p>
-          <a href="#" className="text-indigo-600 font-semibold hover:underline">
-            Learn More
-          </a>
-        </div>
-       
       </div>
-    </div>
-  )
-}
+    </section>
+  );
+};
 
-export default OurService
+export default OurService;

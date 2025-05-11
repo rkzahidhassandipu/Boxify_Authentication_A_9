@@ -1,4 +1,5 @@
 import React from "react";
+import PageTitle from "./PageTitle";
 
 const HeroSection = () => {
   return (
@@ -26,7 +27,7 @@ const HeroSection = () => {
           <img
             src="https://i.postimg.cc/25hCJ0pZ/photo-1607706189992-eae578626c86.jpg"
             alt="Service visual"
-            className="rounded-xl w-full h-full object-cover"
+            className="rounded-xl w-full h-full object-cover mt-8 md:mt-0"
           />
         </div>
       </div>

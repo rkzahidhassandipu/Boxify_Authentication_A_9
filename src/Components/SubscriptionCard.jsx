@@ -7,7 +7,7 @@ const SubscriptionCard = ({ service }) => {
   const { id, name, category, thumbnail, price, frequency, description, rating } = service;
 
   return (
-    <motion.div
+    <div
       className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
@@ -45,7 +45,7 @@ const SubscriptionCard = ({ service }) => {
           </Link>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

@@ -1,0 +1,64 @@
+/* Icon container */
+.icon-container {
+  position: relative;
+  width: 200px;  /* Adjust as needed */
+  height: 200px; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main icon */
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  /* Initial styling for the icon */
+  width: 50px;  /* Adjust as needed */
+  height: 50px; /* Adjust as needed */
+  background-color: rgb(79, 57, 242);  /* Adjust as needed */
+  color: white;
+  text-align: center;
+  line-height: 50px;  /* Same as height for vertical centering */
+  font-size: 24px;  /* Icon size (can use an actual icon if needed) */
+  font-weight: bold;
+  z-index: 3;  /* Ensure it's on top */
+  /* No animation here to prevent bubbling */
+}
+
+/* Create additional semi-transparent circles behind the icon */
+.icon-container::before,
+.icon-container::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.icon-container::before {
+  width: 80px;  /* Adjust as needed */
+  height: 80px; /* Adjust as needed */
+  background-color: rgba(79, 57, 242, 0.349); /* Semi-transparent purple */
+  animation: pulse-background 3s linear infinite;
+}
+
+.icon-container::after {
+  width: 120px;  /* Adjust as needed */
+  height: 120px; /* Adjust as needed */
+  background-color: rgba(79, 57, 242, 0.356); /* More transparent purple */
+  animation: pulse-background 3s linear infinite 1s; /* Slight delay for effect */
+}
+
+/* Keyframes for the background bubbles' pulse animation */
+@keyframes pulse-background {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}

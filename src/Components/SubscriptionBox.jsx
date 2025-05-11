@@ -2,6 +2,7 @@ import React from "react";
 import { useLoaderData } from "react-router"; // fix router import
 import SubscriptionCard from "./SubscriptionCard";
 import ServiceHeader from "./ServiceHeader";
+import PageTitle from "./PageTitle";
 
 const SubscriptionBox = () => {
   const subscriptionData = useLoaderData();
