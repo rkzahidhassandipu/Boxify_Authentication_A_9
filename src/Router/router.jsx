@@ -19,12 +19,14 @@ const router = createBrowserRouter([
       {
         index: true,
         loader: () => fetch("/data.json"),
-        element: <Home />
+        element: <Home />,
+        hydrateFallbackElement: <Loading />
       },
       {
         path: "service/:id",
         element: <PrivateRoute><SingleSub /></PrivateRoute>,
         loader: () => fetch("/data.json"),
+        hydrateFallbackElement: <Loading />
       },
       {
         path: "login",
