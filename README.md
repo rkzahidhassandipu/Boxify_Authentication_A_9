@@ -1,13 +1,82 @@
-# React + Vite
+# 📦 Boxify – Subscription Box Service Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Preview
 
-## Expanding the ESLint configuration
+👉 [Click to View Boxify Live](https://subscriptionbox-34c8e.web.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-https://814dd212-9c21-42a4-9b1e-fc4e3202a951.dev13.app-preview.com/
+
+
+
+Boxify is a modern and responsive subscription box service platform built with React. It offers a smooth user experience with Firebase authentication, dynamic routing, protected content, and elegant UI components. Perfect for learning modern web development best practices.
+
+---
+
+## ✨ Key Features
+
+- 🔐 **Authentication**: Register/Login with email-password & Google; Forget password functionality.
+- 🛡 **Protected Routes**: Auth-based route access; auto-redirects based on login state.
+- 🧾 **Profile Page**: View and edit user profile (name and photo).
+- 💌 **Contact Page**: Accessible only to authenticated users.
+- 🧭 **Navigation**: Dynamic navbar based on user state; profile dropdown with logout.
+- 🖼 **Swiper Slider**: Beautiful hero slider on the home page.
+- 📦 **Subscription Cards**: Service boxes with “View More” button leading to detail pages.
+- 📱 **Responsive Design**: Mobile-friendly and accessible layout.
+
+---
+
+## 🧪 Pages Overview
+
+### 🔐 Register Page
+- Inputs: Name, Email, Profile Photo URL, Password.
+- Password visibility toggle.
+- Google Signup.
+- Redirect to login if account exists.
+
+### 🔐 Login Page
+- Inputs: Email, Password.
+- Forget Password feature.
+- Google Login.
+- Redirects on successful login.
+
+### 🏠 Home Page
+- Swiper Hero Slider.
+- Subscription Box Cards.
+- "View More" leads to details page (auth protected).
+
+### 🧑‍💼 Profile Page
+- Shows user info: name, email, photo, join date.
+- Allows name/photo updates.
+
+### ✉️ Contact Page
+- Auth protected.
+- Redirects to login if not logged in.
+
+---
+
+## 🚀 Technologies & NPM Packages Used
+
+- **React**
+- **React DOM**
+- **React Router**
+- **Firebase**
+- **React Toastify**
+- **Tailwind CSS**
+- **@tailwindcss/vite**
+- **Framer Motion**
+- **Lucide React**
+- **React Icons**
+- **React Helmet**
+- **Swiper**
+
+---
+
+## 📂 Folder Structure
+
+---
+
+## 📣 Author
+
+Created with ❤️ by Raihan Uddin passionate MERN Stack Developer.
