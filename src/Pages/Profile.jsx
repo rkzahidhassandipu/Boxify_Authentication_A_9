@@ -14,17 +14,20 @@ const Profile = () => {
   const [name, setName] = useState(user?.displayName );
 
   const handleSave = () => {
-    if(user){
-      updateUserInfo({displayName: name, photoURL})
-      setUser({...user, displayName: name, photoURL})
+  if (user) {
+    updateUserInfo({ displayName: name, photoURL })
       .then(() => {
-        toast.success("Your profile is Updated")
+        setUser({ ...user, displayName: name, photoURL });
+        toast.success("Your profile is updated");
         setIsEditing(false);
-      }).catch((error) => {
-          console.log('Error updating profile:', error);
-        });
-    }
-  };
+      })
+      .catch((error) => {
+        console.error('Error updating profile:', error);
+        toast.error("Failed to update profile");
+      });
+  }
+};
+
 
    if (loading) {
     return <Loading />;
