@@ -72,6 +72,34 @@ Boxify is a modern and responsive subscription box service platform built with R
 - **Swiper**
 
 
+## 💻 How to Run Locally
+
+### 1. Clone the Repository
+
+```bash
+git clone [https://github.com/your-username/gardening-hub.git
+cd gardening-hub
+```
+
+# 2. Frontend Setup
+
+```bash
+cd client
+npm install
+npm run dev
+```
+
+4. Environment Variables
+Frontend (client/.env)
+```bash
+VITE_API_URL=http://localhost:5000
+VITE_FIREBASE_API_KEY=your_firebase_api_key_here
+VITE_FIREBASE_AUTH_DOMAIN=your_firebase_project.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=your_firebase_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id
+VITE_FIREBASE_APP_ID=your_firebase_app_id
+```
 
 ## 📣 Author
 
