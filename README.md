@@ -77,7 +77,7 @@ Boxify is a modern and responsive subscription box service platform built with R
 ### 1. Clone the Repository
 
 ```bash
-git clone [https://github.com/your-username/gardening-hub.git
+git clone https://github.com/rkzahidhassandipu/Boxify_Authentication_A_9.git
 cd gardening-hub
 ```
 
